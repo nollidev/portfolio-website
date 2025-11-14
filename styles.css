@@ -34,14 +34,26 @@ section, article {
     flex: 30%;
 }
 
+#fruit_ninja_figures {
+    flex-direction: row;
+}
+
+.gallery_item {
+    padding: 10px;
+    width: 50%;
+}
 @media screen and (max-width: 700px){
-    .flexbox {
+    .flexbox, #fruit_ninja_figures {
         flex-direction: column;
     }
+    
+    .gallery_item {
+        width: 90%;
+    }
 }
+
+
 
 h1 {color: white}
 h2 {color: lightgrey}
 a {color: lightgrey}
-img {max-width: 450px}
-video {width:480px; height:270px;}
